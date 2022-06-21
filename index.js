@@ -1,6 +1,6 @@
 import product from './product.js';
 // the thing that will be loaded
-
+/************ For Image Carousel **************/
 let currDisplay = document.querySelector('.image-carousel-card');
 let carImages = document.querySelectorAll('.carousel-img');
 let leftArrow = document.getElementById('left-arrow');
@@ -38,6 +38,7 @@ let cartCount = document.getElementById("cart-count")
 let cartItems = 0;
 // show number of items added to cart
 
+/************ For Product Display **************/
 for (let i = 0; i<product.length; i++){
     // loop through the whole inventory
     let cardItem = document.createElement("div");
@@ -102,7 +103,7 @@ for (let i = 0; i<product.length; i++){
     // add the whole card to the shop-section
 }
 
-
+/************ For Adding Products  to cart **************/
 function displayClick(e) {
     let trigger = product[e.target.value]['name']
     cartItems++;
@@ -117,7 +118,7 @@ function displayClick(e) {
 // the display will be added an the shop list per click
 // but cx doesnt know until check out
 
-
+/************ For Checking out Items from cart **************/
 function showCart(){
     if (cartItems === 0){return};
     // if there is no item in cart dont display
