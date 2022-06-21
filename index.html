@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <img class="logo-img" src="./images/main-logo.png" alt="company image">
+                <h1 class="logo-name">Stickers Mart</h1>
+            </div>
+            <div id="cart-count" class="cart-count none"></div>
+            <button id="shop-cart" class="icon-btn">
+                <img class="shop-cart" src="./images/shopping-cart.png" alt="shopping cart">
+            </button>
+            
+        </nav>
+    </header>
+    
+    <main id="main-section">
+        <div id="image-carousel">
+            <div class="cover-carousel">
+                <p>ON SALE</p>
+            </div>
+            <button id="right-arrow" class="arrow right">></button>
+            <button id="left-arrow" class="arrow left"><</button>
+            <div class="image-carousel-card">
+                <img class="carousel-img" src="./images/star-sticker.png" alt="">
+                <img class="carousel-img" id="last-clone" src="./images/smile-sticker.png" alt="">
+                <img class="carousel-img" src="./images/bunny-sticker.png" alt="">
+                <img class="carousel-img" src="./images/cat-sticker.png" alt="">
+                <img class="carousel-img" src="./images/message-sticker.png" alt="">
+                <img class="carousel-img" src="./images/neon-bulb-sticker.png" alt="">
+                <img class="carousel-img" id="first-clone" src="./images/star-sticker.png" alt="">
+                <img class="carousel-img" src="./images/heart-sticker.png" alt="">
+            </div>
+        </div>
+        <hr>
+        <div id="shop-section">
+            <!-- 
+                Javascript will target this with DOM
+                Will use an object to display the products
+                here
+            -->
+        </div>
+        <div id="modal-view" class="modal none">
+            <div class="shop-list">
+                <div id="shop-list">
+                </div>
+                <div class="buy-total">
+                    <button class="check-btn">checkout</button>
+                    <h4 id="total-price" class="check-price">₱ 0.00</h4>
+                </div>
+            </div>
+            
+        
+        </div>
+
+    </main>
+    <hr>
+    <footer class="footer-thing">
+        <p>Sources for the images <a href="https://www.flaticon.com/" target="_blank">@ flaticon</a></p>
+        
+        <a 
+        href="https://www.flaticon.com/authors/pictranoosa"
+        target="_blank" title="Sticker icons">Sticker by pictranoosa</a>
+        <a 
+        href="https://www.flaticon.com/authors/freepik" 
+        target="_blank" title="Sticker icons">Sticker by Freepik </a>
+        <a 
+        href="https://www.flaticon.com/authors/pixel-perfect" 
+        target="_blank" title="Sticker icons">Sticker by Pixel Perfect</a>
+
+    </footer>
+</body>
+</html>
